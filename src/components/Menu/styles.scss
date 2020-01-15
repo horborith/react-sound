@@ -1,0 +1,26 @@
+.menu {
+	background-color: #fff;
+	border-bottom: 1px solid #dddddd;
+
+	.menu-left {
+		flex: 4;
+
+		.navbar {
+			padding: unset;
+		}
+
+		.item-name {
+			flex: 1;
+			border-left: 1px solid #dddddd;
+
+			&:last-child {
+				border-right: 1px solid #dddddd;
+			}
+		}
+
+	}
+
+	.menu-right {
+		flex: 1;
+	}
+}

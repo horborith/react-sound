@@ -1,0 +1,71 @@
+.menu_Header {
+  background-color: #393f41;
+  height: 50px;
+  .container_Header {
+    color: #fff;
+    display: block !important;
+    .title_Header {
+      color: #fff;
+    }
+    .icon_Header {
+      color: #fff;
+      margin-top: -3px;
+      margin-right: 20px;
+    }
+    .right_Header {
+      display: flex;
+      .search_Content {
+        width: 80%;
+        .search_Box {
+          width: 80%;
+          display: flex;
+          background-color: #2b2b2b;
+          border-radius: 3px;
+          float: right;
+          margin-top: 5px;
+          .search_Icon {
+            color: gray;
+            margin: 5px 5px 0 10px;
+          }
+          .search_Input {
+            height: 28px;
+            border: none;
+            color: #fff;
+            background-color: transparent;
+            outline: 0;
+            box-shadow: none;
+            margin-left: -10px;
+            font-size: 12px;
+          }
+        }
+      }
+      .profile_Header {
+        width: 20%;
+        .profile {
+          float: right;
+          a {
+            &::after {
+              color: #69696a;
+            }
+          }
+          .icon_Profile {
+            font-size: 20px;
+            color: #fff;
+          }
+          .dropdown_Profile {
+            min-width: 12rem;
+            border-radius: 0;
+            border: 0.1px solid #69696a;
+            margin-top: 10px;
+            .btnSignin {
+              margin-left: 9px;
+              background-color: #e75333;
+              border: none;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
