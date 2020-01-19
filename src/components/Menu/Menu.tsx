@@ -8,6 +8,7 @@ import {
   Nav,
   Container,
 } from 'reactstrap';
+import {AiTwotoneFunnelPlot} from 'react-icons/ai';
 import './styles.scss';
 
 const Menu: React.FC<any> = () => {
@@ -30,9 +31,9 @@ const Menu: React.FC<any> = () => {
           <Navbar color="black" light expand="md">
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
-              <Nav className="mr-auto" navbar>
+              <Nav className="mr-auto manu-contain" navbar>
                 {menus.map((menu) => (
-                  <NavItem className="item-name">
+                  <NavItem className="menu-name">
                     <NavLink href="/#/">{menu.value}</NavLink>
                   </NavItem>
                 ))}
@@ -40,7 +41,20 @@ const Menu: React.FC<any> = () => {
             </Collapse>
           </Navbar>
         </div>
-        <div className="menu-right"></div>
+        <div className="menu-right">
+          <div className="menu-time">
+            <AiTwotoneFunnelPlot className="filter-icon" />
+            <a className="menu-duration" href="/#">
+              7 days
+            </a>
+            <a className="menu-duration" href="/#">
+              30 days
+            </a>
+            <a className="menu-duration mr-4" href="/#">
+              90 days
+            </a>
+          </div>
+        </div>
       </Container>
     </div>
   );

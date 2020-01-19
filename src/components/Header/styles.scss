@@ -4,8 +4,13 @@
   .container_Header {
     color: #fff;
     display: block !important;
+    .col-sm-6 {
+      align-self: center;
+    }
     .title_Header {
       color: #fff;
+      font-size: 14px;
+      letter-spacing: 2px;
     }
     .icon_Header {
       color: #fff;
@@ -17,7 +22,7 @@
       .search_Content {
         width: 80%;
         .search_Box {
-          width: 80%;
+          width: 70%;
           display: flex;
           background-color: #2b2b2b;
           border-radius: 3px;
